@@ -2,6 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+import 'package:slide_puzzle/src/const.dart';
+
 import 'core/puzzle_proxy.dart';
 import 'flutter.dart';
 import 'shared_theme.dart';
@@ -59,7 +61,7 @@ class ThemePlaster extends SharedTheme {
       style: TextStyle(
         color: primary ? _yellowIsh : _chocolate,
         fontFamily: 'Plaster',
-        fontSize: small ? 40 : 77,
+        fontSize: small ? smallFontSize : largeFontSize,
       ),
     );
 

@@ -2,6 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+import 'package:slide_puzzle/src/const.dart';
+
 import 'core/puzzle_proxy.dart';
 import 'flutter.dart';
 import 'shared_theme.dart';
@@ -54,7 +56,7 @@ class ThemeSimple extends SharedTheme {
           style: TextStyle(
             color: Colors.white,
             fontWeight: correctPosition ? FontWeight.bold : FontWeight.normal,
-            fontSize: small ? 30 : 49,
+            fontSize: small ? smallFontSize : largeFontSize,
           ),
         ),
       ),

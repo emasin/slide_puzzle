@@ -5,6 +5,7 @@
 import 'dart:async';
 
 import 'package:provider/provider.dart';
+import 'package:slide_puzzle/src/const.dart';
 
 import 'app_state.dart';
 import 'core/puzzle_animator.dart';
@@ -245,7 +246,7 @@ Widget _doBuildCore(bool small) => ValueTabController<SharedTheme>(
                           padding: const EdgeInsets.all(10),
                           child: Flow(
                             delegate: PuzzleFlowDelegate(
-                              small ? const Size(90, 90) : const Size(140, 140),
+                              small ? const Size(smallSize, smallSize) : const Size(largeSize, largeSize),
                               appState.puzzle,
                               appState.animationNotifier,
                             ),
