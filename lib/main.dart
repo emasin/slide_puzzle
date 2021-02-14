@@ -11,9 +11,9 @@ void main() => runApp(PuzzleApp());
 class PuzzleApp extends StatelessWidget {
   final int rows, columns;
 
-  PuzzleApp({int columns = 6, int rows = 10})
-      : columns = columns ?? 6,
-        rows = rows ?? 10;
+  PuzzleApp({int columns = 5, int rows = 9})
+      : columns = columns ?? 5,
+        rows = rows ?? 9;
 
   @override
   Widget build(BuildContext context) => MaterialApp(

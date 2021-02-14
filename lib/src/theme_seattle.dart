@@ -45,7 +45,7 @@ class ThemeSeattle extends SharedTheme {
         puzzleHeight: puzzle.height,
         pieceIndex: i,
         fit: BoxFit.cover,
-        image: const AssetImage('asset/seattle.jpg'));
+        image: const AssetImage('asset/south-korea.png'));
 
     final correctPosition = puzzle.isCorrectPosition(i);
     final content = createInk(
